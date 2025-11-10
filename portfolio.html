@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio Page of Azek</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">A<span>ze</span>k</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="interest.html" class="nav-item nav-link">Interest</a>
+                        <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
+                        <a href="prointerest.html" class="nav-item nav-link">Focus</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>My Portfolio&nbsp;</h2>
+					  <p style="color:black;">من المستحيل أن يأخذنا الله بهذا القدر فقط لنفشل
+						  <br>
+						  - It is impossible that Allah has brought us this far only to let us fail. -</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- Portfolio Start -->
+        <div class="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>&nbsp;Azek's Portfolio</p>
+                    <h2>My Projects</h2>
+                </div>
+                <p style="text-align:center;">Here are some of my projects that demonstrate my learning:</p>
+				<table border="1" cellspacing="0" cellpadding="8" id="projectTable">
+  <thead>
+    <tr>
+      <th style="text-align:center;">No.</th>
+      <th style="text-align:center;">Project</th>
+      <th style="text-align:center;">Tools</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-desc="A sleek and emotionally expressive portfolio website designed to showcase my identity, academic journey, technical skills, and creative interests. It serves as a digital resume and personal storytelling space, built with minimalist design and intuitive navigation.">
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">Personal Website</td>
+        <td style="text-align:center;">Wix (Website builder)</td>
+      </tr>
+      <tr data-desc="MeowCare is a user-friendly mobile app designed to simplify pet healthcare management. It allows pet owners to schedule and track essential services like vaccinations, deworming, health checkups, flea treatments, and mite treatments—all in one place.">
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">MeowCare-Mobile App</td>
+        <td style="text-align:center;">Flutter, PHP, MySQL
+		  </td>
+	  </tr>
+      <tr data-desc="A centralized digital platform designed to store and distribute memos within an organization. It replaces manual or email-based processes with structured workflows that ensure memos are easily accessible, properly categorized, and securely managed A simple system to manage and share memos among the staff.">
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">Memo Management System</td>
+        <td style="text-align:center;">PHP, MySQL, HTML, JavaScript, Bootstrap?</td>
+      </tr>
+  </tbody>
+</table>
+	<div id="customPopup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h3>Description</h3>
+    <p id="popupDesc"></p>
+  </div>
+</div>
+<script>
+    document.querySelectorAll("#projectTable tbody tr").forEach(row => {
+  row.addEventListener("click", () => {
+    const desc = row.getAttribute("data-desc");
+    document.getElementById("popupDesc").innerText = desc;
+    document.getElementById("customPopup").style.display = "block";
+  });
+});
+
+function closePopup() {
+  document.getElementById("customPopup").style.display = "none";
+}
+  </script>
+				
+            </div>
+        </div>
+        <!-- Portfolio End -->
+		
+		<br>
+		<br>
+		
+		<!-- Team Start -->
+        <div class="team">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Azek's Portfolio </p>
+                    <h2>My Achievement</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/monsoonsim.jpg" alt="Image">
+                                <div class="team-social"> </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>World Championship in MONSOONSIM 2024</h2>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/monsoonsim2.jpg" alt="Image">
+                              <div class="team-social">
+                                </div>
+                          </div>
+                            <div class="team-text">
+                                <h2>MERMC Singapore 2024</h2>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/deanlist.jpg" alt="Image">
+                                <div class="team-social">
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Dean list (3 sem)</h2>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/anis.jpg" alt="Image">
+                                <div class="team-social">
+                                </div>
+                            </div>
+                            <div class="team-text">
+                              <h2>Pembantu Mahasiswa 2024/2025</h2>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+		<!-- Section start -->
+		
+		<!-- Section End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <a href="index.html" class="footer-logo">A<span>ze</span>k</a>
+                        <h3>UCTATI, Kemaman, Terengganu (Malayasia)</h3>
+                        <div class="footer-menu">
+                          <p>+012 345 67890</p>
+                            <p>zackzinnirah@gmail.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Azek_23B10I008©Copyright.2025</p>
+                        </div>
+                        <div class="col-md-6">
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex@Azek</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
